@@ -1,0 +1,15 @@
+<div>
+<h1>{{ name }} Seat Booking System</h1>
+<input type="number" placeholder="Number of seats" #seatCount />
+<button (click)="bookSeats(seatCount.value)">Book Seats</button>
+</div>
+
+<div class="seat-grid">
+<div
+  *ngFor="let seat of seats"
+  [class.booked]="seat.isBooked"
+  [class.available]="!seat.isBooked"
+>
+  {{ seat.seatNumber }}
+</div>
+</div>

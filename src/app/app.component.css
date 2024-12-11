@@ -1,0 +1,23 @@
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 50px);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.seat-grid div {
+  text-align: center;
+  line-height: 50px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.available {
+  background-color: green;
+  color: white;
+}
+
+.booked {
+  background-color: red;
+  color: white;
+}
